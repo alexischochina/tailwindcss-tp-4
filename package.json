@@ -9,12 +9,6 @@
         "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
         "deploy": "npm run build && gh-pages -d dist"
     },
-    "builds": [
-        {
-            "src": "npm run build",
-            "use": "@vercel/static-build"
-        }
-    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/alexischochina/tailwindcss-tp-4.git"
@@ -30,10 +24,4 @@
         "gh-pages": "^6.1.0",
         "tailwindcss": "^3.3.5"
     },
-    "routes": [
-        {
-            "src": "/dist/(.*)",
-            "dest": "/dist/$1"
-        }
-    ]
 }

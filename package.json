@@ -1,0 +1,24 @@
+{
+  "name": "tailwindcss-tp-4",
+  "version": "1.0.0",
+  "description": "## Consignes https://selective-element-e68.notion.site/Module-4-valu-be66c9b4fe2b4261840233da6af6466d",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexischochina/tailwindcss-tp-4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexischochina/tailwindcss-tp-4/issues"
+  },
+  "homepage": "https://github.com/alexischochina/tailwindcss-tp-4#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}

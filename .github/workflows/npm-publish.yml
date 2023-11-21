@@ -1,0 +1,28 @@
+name: Deploy to GitHub Pages
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16' # Version de Node.js que vous utilisez
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build site
+        run: npm run build # ou npm run dev, selon comment vous générez votre site
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist # Le répertoire où se trouve votre site généré

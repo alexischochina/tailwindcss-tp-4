@@ -19,8 +19,8 @@ jobs:
         run: npm install
 
       - name: Build site
-        run: npm run build # ou npm run dev, selon comment vous générez votre site
-
+        run: npm run build src/index.html -o dist
+      
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

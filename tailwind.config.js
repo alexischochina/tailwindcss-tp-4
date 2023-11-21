@@ -15,6 +15,7 @@ module.exports = {
                 "grey": "#E7E7E7",
                 "white": "#FFFFFF",
                 "black": "#000000",
+                "beige-dark": "#1E293B",
             },
             fontSize: {
                 "xs": "0.4rem",
